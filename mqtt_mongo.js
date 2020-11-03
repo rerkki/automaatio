@@ -44,11 +44,11 @@ function addDocument(onAdded){
 
 function createConnection(onCreate){
     MongoClient.connect('mongodb://metropolia:metropolia@cluster0-shard-00-00-fn7gd.gcp.mongodb.net:27017,cluster0-shard-00-01-fn7gd.gcp.mongodb.net:27017,cluster0-shard-00-02-fn7gd.gcp.mongodb.net:27017/automaatio?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority', function(err, client_m) {
-        db = client_m.db('dhtData');
+        db = client_m.db('automaatio'); // DB name
 					if(err)
             throw err;
         console.log("connected to the mongoDB !");
-        myCollection = db.collection('data2');
+        myCollection = db.collection('data2'); //Collection name
         onCreate();
 	    client_m.close();
     });
