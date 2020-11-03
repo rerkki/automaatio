@@ -1,0 +1,26 @@
+{
+  "name": "mqtt_mongo",
+  "version": "1.0.0",
+  "main": "mqtt_mongo.js",
+  "scripts": {
+    "start": "node mqtt_mongo.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.6.2",
+    "mqtt": "^3.0.0"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rerkki/automaatio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rerkki/automaatio/issues"
+  },
+  "homepage": "https://github.com/rerkki/automaatio#readme",
+  "description": ""
+}
