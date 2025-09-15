@@ -39,7 +39,6 @@ var obj;
 mq.on('message', function(topic, message) {
   console.log(message.toString('utf8'));
   obj = JSON.parse(message);
-  console.log(obj.Time, obj.T, obj.H, obj.DP, obj.pCount);
 	myColl.insertOne(obj);
 	console.log(
 	`An entry was inserted successfully`,
